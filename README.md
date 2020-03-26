@@ -1,14 +1,12 @@
-pseudo code:
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# pseudocode:
+
 display 3 bottons stop,start,pause
 click start button
 timer will start
 call start method to start counter
-
-
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
