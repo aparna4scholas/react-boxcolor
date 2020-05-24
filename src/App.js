@@ -13,10 +13,12 @@ export default class App extends Component {
   }
 
   onChange = (e) => {
-    this.setState({
-      color: 'orange',
-      clickCounter: this.state.clickCounter+1
-    })
+    this.setState((prevstate)=>{
+      return( {clickCounter: prevstate.clickCounter++,
+        color:(prevstate.color==='blue')?'orange':'blue'});
+      
+      });  
+    
     console.log("click counter ===> ", this.state.clickCounter)
   }
 
@@ -24,7 +26,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <h1> Box color change .</h1>
-        <div              className="colorBox"
+        <div className="colorBox"
         style={{backgroundColor: this.state.color}}
         onClick={this.onChange}
         >
